@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ManualActivityTracker">
+
+    <TextView
+        android:id="@+id/activity_question"
+        android:layout_width="wrap_content"
+
+        android:layout_height="wrap_content"
+        android:text="What is the activity you are doing now?" />
+
+    <RadioGroup
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/rdgrp"
+        android:layout_below="@+id/activity_question">
+
+        <RadioButton
+            android:id="@+id/walk"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Walking" />
+
+        <RadioButton
+            android:id="@+id/run"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Running" />
+
+        <RadioButton
+            android:id="@+id/exer"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Exercise" />
+
+        <RadioButton
+            android:id="@+id/stand"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Standing" />
+
+        <RadioButton
+            android:id="@+id/sleep"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Sleeping" />
+
+        <RadioButton
+            android:id="@+id/study"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Studying" />
+        <RadioButton
+            android:id="@+id/still"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Still" />
+        <RadioButton
+            android:id="@+id/veh"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="In Vehicle" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/mnl_act"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/veh"
+        android:text="Save"
+        tools:ignore="NotSibling" />
+
+
+</RelativeLayout>
