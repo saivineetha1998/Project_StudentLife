@@ -32,6 +32,16 @@ public class MainActivity extends AppCompatActivity {
                 startActivity(activity2Intent);
             }
         });
+        actvty = (Button) findViewById(R.id.actvy);
+        actvty.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                System.out.println("Button Clicked");
+
+                Intent activity2Intent2 = new Intent(getApplicationContext(), ActivityTrackSensors.class);
+                startActivity(activity2Intent2);
+            }
+        });
         manualActvty = (Button) findViewById(R.id.manulAct);
         manualActvty.setOnClickListener(new View.OnClickListener() {
             @Override
